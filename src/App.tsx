@@ -1,8 +1,12 @@
 import Card from "./components/Card"
 
 import "./App.css"
+import { useEffect } from "react"
 
 function App() {
+  useEffect(() => {
+    document.title = "C23-Exandable-Cards"
+  }, [])
   const cardData = {
     title: "Harry Potter",
     content: "Harry Potter is a globally beloved series of seven fantasy novels written by J.K. Rowling, chronicling the adventures of a young wizard and his friends at Hogwarts School of Witchcraft and Wizardry, culminating in a film series of eight movies",
